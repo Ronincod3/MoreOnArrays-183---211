@@ -36,3 +36,12 @@ console.log(hobbies);
 // ... splice returns the values deleted, therefore once an item or items are deleted you can still use such values when saved on a const
 const myDeletedValues = hobbies.splice(1, 2);
 console.log(myDeletedValues);
+
+
+const testResults = [1, 5.3, 1.5, 10.99, -5, 10]; 
+const storedResults = testResults.slice();  //returns a brand new array
+const storedResults = testResults.concat([3.99, 2]);  // concat adds the new values, and on top of that it creates a new array instance of test.result
+testResults.push(4);
+
+console.log(testResults, storedResults);
+
